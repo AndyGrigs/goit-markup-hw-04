@@ -7,6 +7,7 @@
   --font-size: 16px;
   --cloud-color: #f4f4fd;
   --border-color: #e7e9fc;
+  --cl-success: #31D0AA;
 }
 /* #region Global styles */
 
@@ -419,12 +420,12 @@ a {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-card{
+.portfolio-card {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-overlay-text{
+.portfolio-overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -440,7 +441,7 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover .portfolio-overlay-text{
+.portfolio-item:hover .portfolio-overlay-text {
   transform: translateY(0);
 }
 
@@ -452,12 +453,6 @@ a {
   padding: 20px;
 }
 
-/* .portfolio-overlay {
-  padding: 32px 16px;
-  border: 1px solid var(--border-color);
-  border-top: none;
-} */
-
 .portfolio-category {
   color: var(--primary-text-color);
   font-size: 16px;
@@ -468,7 +463,7 @@ a {
 /* #endregion */
 
 /* #region Footer */
-.footer {
+/* .footer {
   background-color: var(--secondary-text-color);
   color: var(--white-text-color);
   padding: 100px 0;
@@ -488,5 +483,88 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+} */
+.footer {
+  background-color: var(--secondary-text-color);
+  color: var(--white-text-color);
+  padding: 100px 0;
 }
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+.logo-dark {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+
+.footer .logo-accent {
+  color: var(--cloud-color);
+}
+
+.footer-description {
+  color: var(--cloud-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-text-color);
+  margin-bottom: 16px;
+}
+
+.social-media-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social-media-item {
+  width: 40px;
+  height: 40px;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  background-color: var(--cl-success);
+}
+
+.social-icon {
+  fill: var(--cloud-color);
+  width: 24px;
+  height: 24px;
+}
+
 /* #endregion */
