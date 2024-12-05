@@ -264,7 +264,7 @@ a {
 
 .service-item {
   width: calc((100% - 72px) / 4);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .service-description {
@@ -473,7 +473,7 @@ a {
 .footer-container {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .footer-info {
