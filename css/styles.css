@@ -259,6 +259,7 @@ a {
   border-radius: 4px;
   border: 1px solid #8e8f99;
   margin-bottom: 8px;
+
 }
 
 .service-item {
@@ -347,7 +348,7 @@ a {
 .social-list {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 26px;
   margin-top: 8px;
 }
 
@@ -463,27 +464,6 @@ a {
 /* #endregion */
 
 /* #region Footer */
-/* .footer {
-  background-color: var(--secondary-text-color);
-  color: var(--white-text-color);
-  padding: 100px 0;
-}
-
-.logo-dark {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.footer .logo-accent {
-  color: var(--cloud-color);
-}
-
-.footer-description {
-  color: var(--cloud-color);
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  max-width: 264px;
-} */
 .footer {
   background-color: var(--secondary-text-color);
   color: var(--white-text-color);
